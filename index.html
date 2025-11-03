@@ -6,19 +6,11 @@
   <title>APESHWAR TRADERS</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
   <style>
-    /* Reset */
     * { margin:0; padding:0; box-sizing:border-box; }
-
     body { font-family: 'Poppins', sans-serif; background:#f9f9f9; }
 
-    /* Header */
     header {
-      display:flex; 
-      align-items:center; 
-      justify-content:space-between; 
-      padding:20px 40px; 
-      background:#2e7d32;
-      flex-wrap:wrap;
+      display:flex; align-items:center; justify-content:space-between; padding:20px 40px; background:#2e7d32; flex-wrap:wrap;
     }
     header img { height:60px; margin-right:15px; }
     header h1 { color:white; font-family:'Montserrat', sans-serif; margin:0; font-size:1.8rem; }
@@ -26,7 +18,6 @@
     nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
     nav a:hover { text-decoration:underline; }
 
-    /* Sections */
     section { padding:60px 40px; }
     #about { background:#ffffff; }
     #products { background:#f0f0f0; }
@@ -35,16 +26,15 @@
     h2 { font-family:'Montserrat', sans-serif; color:#2e7d32; margin-bottom:20px; }
     p { margin-bottom:15px; line-height:1.6; }
 
-    /* Product Cards */
-    .product-grid { display:flex; flex-wrap:wrap; gap:20px; }
+    /* Product Grid */
+    .product-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
     .product-card {
-      background:white; 
-      padding:20px; 
-      border-radius:8px; 
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      flex:1 1 200px;
-      text-align:center;
+      background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      flex:1 1 220px; max-width:250px; text-align:center;
     }
+    .product-card img { width:100%; height:150px; object-fit:cover; border-radius:5px; margin-bottom:10px; }
+    .product-card h3 { font-family:'Montserrat', sans-serif; color:#2e7d32; margin-bottom:8px; }
+    .product-card p { font-size:0.9rem; color:#555555; }
 
     /* Contact Form */
     form { display:flex; flex-direction:column; max-width:500px; margin:auto; }
@@ -52,7 +42,6 @@
     form button { padding:12px; border:none; background:#2e7d32; color:white; font-weight:bold; border-radius:5px; cursor:pointer; }
     form button:hover { background:#1b4d20; }
 
-    /* Footer */
     footer { text-align:center; padding:20px; background:#2e7d32; color:white; }
   </style>
 </head>
@@ -77,7 +66,7 @@
   <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <p>APESHWAR TRADERS is a leading supplier of high-quality lime products and minerals. We specialize in Hydrated Lime, Quick Lime, Lime Stone, and also supply Biskmark Brown. Our commitment is to provide reliable products and excellent customer service to farmers and businesses.</p>
+    <p>APESHWAR TRADERS is a leading supplier of high-quality lime products and minerals. We specialize in Hydrated Lime, Quick Lime, Lime Stone, and also supply Bismark Brown. Our commitment is to provide reliable products and excellent customer service to farmers and businesses.</p>
   </section>
 
   <!-- Products Section -->
@@ -85,20 +74,24 @@
     <h2>Our Products</h2>
     <div class="product-grid">
       <div class="product-card">
+        <img src="https://via.placeholder.com/250x150?text=Hydrated+Lime" alt="Hydrated Lime">
         <h3>Hydrated Lime</h3>
-        <p>High purity lime suitable for agricultural and industrial use.</p>
+        <p>Used in construction, water treatment, and chemical industries.</p>
       </div>
       <div class="product-card">
+        <img src="https://via.placeholder.com/250x150?text=Quick+Lime" alt="Quick Lime">
         <h3>Quick Lime</h3>
-        <p>Fast-reacting lime for soil treatment and construction.</p>
+        <p>High-purity lime for industrial applications.</p>
       </div>
       <div class="product-card">
+        <img src="https://via.placeholder.com/250x150?text=Lime+Stone" alt="Lime Stone">
         <h3>Lime Stone</h3>
-        <p>Natural lime stone sourced directly from trusted quarries.</p>
+        <p>Quality stone for manufacturing and construction.</p>
       </div>
       <div class="product-card">
-        <h3>Biskmark Brown</h3>
-        <p>Quality brown mineral for soil and construction purposes.</p>
+        <img src="https://via.placeholder.com/250x150?text=Bismark+Brown" alt="Bismark Brown">
+        <h3>Bismark Brown</h3>
+        <p>Premium-grade chemical for multiple industries.</p>
       </div>
     </div>
   </section>
